@@ -1,4 +1,5 @@
-name: Playwright Tests
+name: Commit main execution
+
 on:
   push:
     branches: [ main, master ]
