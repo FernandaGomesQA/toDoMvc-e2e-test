@@ -1,10 +1,9 @@
 class Page {
-    constructor(page, path, baseUrl = CONFIG_ENV.baseUrl) {
+    constructor(page , baseUrl = CONFIG_ENV.baseUrl) {
         this.page = page
-        this.path = path
         this.baseUrl = baseUrl
 
-        this.url = `${this.baseUrl}${this.path}`
+        this.url = `${this.baseUrl}`
     }
 
     async goto() {

@@ -8,12 +8,10 @@ test.describe('Fluxo do toDoList', () =>{
         const toDoMvc = data.home.toDoMvc
 
         await homePage.goto()
-        await sleep(3)
 
         await homePage.validateTitle(toDoMvc.pageTitle)
 
         await homePage.insertTask(toDoMvc.task)
-        await sleep(3)
 
         await homePage.validateInsertTask(toDoMvc.task)
 
@@ -24,10 +22,9 @@ test.describe('Fluxo do toDoList', () =>{
         const toDoMvc = data.home.toDoMvc
 
         await homePage.goto()
-        await sleep(3)
+        await homePage.validateTitle(toDoMvc.pageTitle)
 
         await homePage.insertTask(toDoMvc.task)
-        await sleep(3)
 
         await homePage.taskCompleted()
 
@@ -40,10 +37,9 @@ test.describe('Fluxo do toDoList', () =>{
         const toDoMvc = data.home.toDoMvc
 
         await homePage.goto()
-        await sleep(3)
+        await homePage.validateTitle(toDoMvc.pageTitle)
 
         await homePage.insertTask(toDoMvc.task)
-        await sleep(3)
 
         await homePage.taskCompleted()
 
